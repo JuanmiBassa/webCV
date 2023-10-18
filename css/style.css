@@ -57,6 +57,16 @@ body {
     }
 }
 
+#logo-loading-panel {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+#logo-loading-panel>img {
+    width: 100%;
+}
+
 #loading-title-container {
     height: 25px;
 }
@@ -128,9 +138,9 @@ header>div {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 50px;
-    font-size: 50px;
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
     color: var(--secondary-text);
     margin: 0px 2.5px;
     transition: 0.2s;
@@ -291,12 +301,19 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+}
+
+#img-section2 {
+    width: 500px;
+}
+
+#img-section2>img {
+    width: 100%;
 }
 
 #carousel-container {
     display: flex;
-    width: 500px;
+    width: 450px;
     overflow: hidden;
     border-radius: 10px;
 }
@@ -335,6 +352,18 @@ h2 {
     border: 1px var(--bg3) solid;
 }
 
+#aboutMe-paragraph {
+    background-color: var(--bg2);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px 0px;
+}
+
+#aboutMe-paragraph>p {
+    color: white;
+    margin: 5px;
+}
+
 .aboutMe-text {
     display: flex;
     background-color: var(--bg2);
@@ -355,7 +384,7 @@ h2 {
 
 #carousel-buttons {
     margin-top: 20px;
-    width: 500px;
+    width: 450px;
     display: flex;
     justify-content: space-between;
     align-items: center;
