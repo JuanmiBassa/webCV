@@ -282,6 +282,11 @@ h2 {
     top: 0;
     transform: translateY(0%);
     animation: float 10s linear infinite;
+    overflow: hidden;
+}
+
+#index-img>img {
+    width: 100%;
 }
 
 @keyframes float {
@@ -410,7 +415,7 @@ h2 {
 
 @media screen and (max-width: 768px) {
     ::-webkit-scrollbar {
-        width: 5px;
+        width: 2px;
     }
 
     /* NAV */
@@ -429,17 +434,58 @@ h2 {
         display: none;
     }
 
+    /* LOADING PANEL */
+    #loading-bar-container {
+        width: 300px;
+    }
+
     /* MAIN */
-    main {
-        height: calc(100vh - 80px);
+
+    /* SECTION 1 */
+    #index-text-container {
+        display: flex;
+        align-items: center;
+        margin: 80px 0px 0px 0px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    #index-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 20%;
+    }
+    
+    #index-img>img {
+        width: 700px;
+        margin-right: 25%;
     }
 
     /* SECTION 2 */
+    #section2 {
+        flex-direction: column-reverse;
+        justify-content: end;
+    }
+
+    #img-section2 {
+        height: 100%;
+        height: 40%;
+        overflow: hidden;
+    }
+    
+    #img-section2>img {
+        width: 100%;
+    }
+    
     #carousel-container {
-        width: 90%;
+        width: 90vw;
     }
 
     #carousel-buttons {
-        width: 90%;
+        width: 100%;
     }
 }
