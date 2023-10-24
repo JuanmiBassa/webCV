@@ -4,11 +4,11 @@ let windowHeight = 0;
 getWindowSize();
 window.addEventListener('resize', getWindowSize);
 function getWindowSize() {
-    windowWidth = window.innerWidth;
-    windowHeight = window.innerHeight;
-    if (windowHeight <= 1024) {
-        windowHeight -= 80;
-    }
+  windowWidth = window.innerWidth;
+  windowHeight = window.innerHeight;
+  if (windowHeight <= 1024) {
+    windowHeight -= 80;
+  }
 }
 
 /* LOADING PANEL */
@@ -32,31 +32,50 @@ showNextH4();
 /* NAV BUTTON COLOR */
 const nav_buttons = document.querySelectorAll('.nav-button');
 const main = document.querySelector('main');
+const section1 = document.querySelector('#section1');
+const section2 = document.querySelector('#section2');
+const section3 = document.querySelector('#section3');
+const section4 = document.querySelector('#section4');
+const section5 = document.querySelector('#section5');
+
+var section1Start = 0;
+var section1End = section1Start + section1.offsetHeight;
+var section2Start = section1End;
+var section2End = section2Start + section2.offsetHeight;
+var section3Start = section2End;
+var section3End = section3Start + section3.offsetHeight;
+
+var section4Start = section3End;
+var section4End = section4Start + section4.offsetHeight;
+var section5Start = section4End;
+var section5End = section5Start + section5.offsetHeight;
 
 main.addEventListener('scroll', () => {
-    const scrollTop = main.scrollTop;
+  const scrollTop = main.scrollTop;
 
-    if (scrollTop < windowHeight - 100) {
-        paintBottonNav(0);
-    } else if (scrollTop >= windowHeight - 100 && scrollTop < 2 * windowHeight - 100) {
-        paintBottonNav(1);
-    } else if (scrollTop >= 2 * windowHeight - 100 && scrollTop < 3 * windowHeight - 100) {
-        paintBottonNav(2);
-    } else if (scrollTop >= 3 * windowHeight - 100 && scrollTop < 4 * windowHeight - 100) {
-        paintBottonNav(3);
-    } else if (scrollTop >= 4 * windowHeight - 100 && scrollTop < 5 * windowHeight - 100) {
-        paintBottonNav(4);
-    }
+  if (scrollTop >= section1Start && scrollTop < section1End) {
+    paintBottonNav(0);
+    section1.classList.remove('ocult-container');
+  } else if (scrollTop >= section2Start && scrollTop < section2End) {
+    paintBottonNav(1);
+    section1.classList.add('ocult-container');
+  } else if (scrollTop >= section3Start && scrollTop < section3End) {
+    paintBottonNav(2);
+  } else if (scrollTop >= section4Start && scrollTop < section4End) {
+    paintBottonNav(3);
+  } else if (scrollTop >= section5Start && scrollTop < section5End) {
+    paintBottonNav(4);
+  }
 });
 
 function paintBottonNav(numNavButton) {
-    nav_buttons.forEach((element, index) => {
-        if (index == numNavButton) {
-            element.classList.add('navSelected');
-        } else {
-            element.classList.remove('navSelected');
-        }
-    });
+  nav_buttons.forEach((element, index) => {
+    if (index == numNavButton) {
+      element.classList.add('navSelected');
+    } else {
+      element.classList.remove('navSelected');
+    }
+  });
 }
 
 /* CAROUSEL - SECTION 2 */
