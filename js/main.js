@@ -6,9 +6,6 @@ window.addEventListener('resize', getWindowSize);
 function getWindowSize() {
   windowWidth = window.innerWidth;
   windowHeight = window.innerHeight;
-  if (windowHeight <= 1024) {
-    windowHeight -= 80;
-  }
 }
 
 /* LOADING PANEL */
