@@ -47,11 +47,11 @@ main.addEventListener('scroll', () => {
     const section80Percent = sectionStart + (section.offsetHeight * 0.8);
 
     if (scrollTop >= section20Percent && scrollTop < section80Percent) {
-      section.classList.remove('ocult-container');
+      // section.classList.remove('ocult-container');
     } else if (scrollTop >= section20Percent && scrollTop < section80Percent) {
       paintButtonNav(index);
     } else if (scrollTop >= section80Percent && scrollTop < sectionEnd) {
-      section.classList.add('ocult-container');
+      // section.classList.add('ocult-container');
     }
 
     if (scrollTop >= (sectionStart - windowHeight / 2) && scrollTop < sectionMiddle) {

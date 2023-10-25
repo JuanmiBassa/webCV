@@ -236,11 +236,11 @@ main {
     width: 100vw;
     height: 100vh;
     overflow: auto;
-    scroll-snap-type: y mandatory;
+    /* scroll-snap-type: y mandatory; */
 }
 
 .snap-section {
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; */
     width: 100%;
     min-height: 100%;
     opacity: 1;
@@ -255,6 +255,16 @@ main {
 #section1 {
     position: relative;
     display: flex;
+}
+
+#cloud-index-img {
+    background-image: url(../img/cloud_index.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: absolute;
+    width: 100vw;
+    height: 100%;
 }
 
 #index-text-container {
