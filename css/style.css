@@ -280,6 +280,32 @@ h2 {
     color: transparent;
 }
 
+#index-buttons-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.index-button {
+    background: var(--sublime-gradientY);
+    padding: 2px;
+    border-radius: 10px;
+}
+
+.index-button>a {
+    padding: 0px 10px 0px 10px;
+    height: 30px;
+    background-color: var(--bg2);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
 #index-img-container {
     pointer-events: none;
     position: absolute;

@@ -1,5 +1,5 @@
 window.addEventListener('load', () => {
-  
+
 });
 
 /* WINDOW SIZE */
@@ -21,7 +21,7 @@ showNextH4();
 function showNextH4() {
   if (loadingTitleIndex < h4Elements.length) {
     h4Elements[loadingTitleIndex].style.display = "block";
-    setTimeout(showNextH4, 1550);
+    setTimeout(showNextH4, 1600);
     h4Elements[loadingTitleIndex].addEventListener("animationend", function () {
       this.style.display = "none";
       this.style.animation = "";
@@ -46,15 +46,15 @@ main.addEventListener('scroll', () => {
     const section20Percent = sectionStart + (section.offsetHeight * 0.2);
     const section80Percent = sectionStart + (section.offsetHeight * 0.8);
 
-    if (scrollTop >= section20Percent && scrollTop < sectionMiddle) {
+    if (scrollTop >= section20Percent && scrollTop < section80Percent) {
       section.classList.remove('ocult-container');
-    } else if (scrollTop >= sectionMiddle && scrollTop < section80Percent) {
+    } else if (scrollTop >= section20Percent && scrollTop < section80Percent) {
       paintButtonNav(index);
     } else if (scrollTop >= section80Percent && scrollTop < sectionEnd) {
       section.classList.add('ocult-container');
     }
 
-    if (scrollTop >= sectionStart && scrollTop < sectionMiddle) {
+    if (scrollTop >= (sectionStart - windowHeight / 2) && scrollTop < sectionMiddle) {
       activeSection = index;
     }
   });
