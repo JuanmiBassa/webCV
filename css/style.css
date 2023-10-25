@@ -1,5 +1,6 @@
 :root {
     --bg: #181b1e;
+    --bg-transparent: #181b1ec4;
     --bg2: #273036;
     --bg3: #83929d;
     --secondary-text: #cecece;
@@ -24,7 +25,6 @@
 ::-webkit-scrollbar-thumb {
     background: var(--bg3);
 }
-
 
 /* BODY */
 body {
@@ -196,10 +196,10 @@ nav {
 .nav-link-selected:hover::before {
     background-color: var(--bg2);
     text-wrap: nowrap;
-    padding: 5px 20px 5px 5px;
+    padding: 10px 20px 10px 10px;
     clip-path: polygon(0 0, 80% 0, 100% 50%, 80% 100%, 0 100%);
     position: absolute;
-    transform: translateX(-50px);
+    transform: translateX(-60px);
     text-decoration: none;
     color: var(--secondary-text);
     right: 0;
@@ -243,23 +243,26 @@ main {
     scroll-snap-align: start;
     width: 100%;
     min-height: 100%;
-    overflow-y: hidden;
     opacity: 1;
     transition: opacity 1s;
+}
+
+.ocult-container {
+    opacity: 0;
 }
 
 /* SECTION 1 */
 #section1 {
     position: relative;
     display: flex;
-    flex-direction: column;
 }
 
 #index-text-container {
     display: flex;
     flex-direction: column;
     align-items: start;
-    margin: 100px 0px 0px 100px;
+    margin-top: 10%;
+    margin-left: 10%;
 }
 
 .subtitle {
@@ -278,19 +281,16 @@ h2 {
 }
 
 #index-img-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    pointer-events: none;
+    position: absolute;
+    width: 60%;
+    top: 60%;
+    left: 45%;
+    transform: translate(-50%, -50%);
 }
 
 #index-img {
-    width: 700px;
-    position: absolute;
-    top: 0;
-    transform: translateY(0%);
     animation: float 10s linear infinite;
-    overflow: hidden;
 }
 
 #index-img>img {
@@ -424,11 +424,16 @@ h2 {
     background-color: var(--bg2);
 }
 
-.ocult-container {
-    opacity: 0;
-}
-
 @media screen and (max-width: 1024px) {
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+
+    /* HEADER */
+    header {
+        background-color: var(--bg-transparent);
+        backdrop-filter: blur(5px);
+    }
 
     /* NAV */
     nav {
@@ -447,63 +452,49 @@ h2 {
     }
 
     /* MAIN */
+    main {
+        scroll-snap-type: none;
+    }
 
     /* SECTION 1 */
-    #index-text-container {
-        display: flex;
+    #section1 {
         align-items: center;
-        margin: 80px 0px 0px 0px;
+        flex-direction: column;
+    }
+
+    #index-text-container {
+        margin-top: 100px;
+        margin-left: 0;
     }
 
     h1 {
         font-size: 40px;
     }
 
+    #index-img-container {
+        position: static;
+        display: flex;
+        width: 100%;
+        top: 0%;
+        left: 0%;
+        transform: translate(0%, 0%);
+    }
+
     #index-img {
         width: 100%;
+        overflow: hidden;
         display: flex;
         justify-content: center;
         align-items: center;
-        top: 20%;
     }
 
     #index-img>img {
-        width: 700px;
-        margin-right: 25%;
-    }
-
-    /* SECTION 2 */
-    #section2 {
-        flex-direction: column-reverse;
-    }
-
-    #img-section2 {
-        transform: translateY(-5%);
-        height: 40%;
-        max-width: 100%;
-        overflow: hidden;
-        z-index: -5;
-    }
-
-    #img-section2>img {
-        width: 100%;
-    }
-
-    #carousel-container {
-        margin-top: 60px;
-        width: 90vw;
-    }
-
-    #carousel-buttons {
-        width: 100%;
+        width: 600px;
+        transform: translate(-10%, 0%);
     }
 }
 
 @media screen and (max-width: 768px) {
-    ::-webkit-scrollbar {
-        width: 2px;
-    }
-
     /* LOADING PANEL */
     #loading-bar-container {
         width: 300px;

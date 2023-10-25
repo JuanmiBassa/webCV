@@ -1,3 +1,7 @@
+window.addEventListener('load', () => {
+  
+});
+
 /* WINDOW SIZE */
 let windowWidth = 0;
 let windowHeight = 0;
@@ -12,10 +16,12 @@ function getWindowSize() {
 const h4Elements = document.querySelectorAll(".loading-title");
 let loadingTitleIndex = 0;
 
+showNextH4();
+
 function showNextH4() {
   if (loadingTitleIndex < h4Elements.length) {
     h4Elements[loadingTitleIndex].style.display = "block";
-    setTimeout(showNextH4, 1600);
+    setTimeout(showNextH4, 1550);
     h4Elements[loadingTitleIndex].addEventListener("animationend", function () {
       this.style.display = "none";
       this.style.animation = "";
@@ -24,56 +30,50 @@ function showNextH4() {
   }
 }
 
-showNextH4();
-
 /* NAV BUTTON COLOR */
-const nav_buttons = document.querySelectorAll('.nav-button');
 const main = document.querySelector('main');
-const section1 = document.querySelector('#section1');
-const section2 = document.querySelector('#section2');
-const section3 = document.querySelector('#section3');
-const section4 = document.querySelector('#section4');
-const section5 = document.querySelector('#section5');
-
-var section1Start = 0;
-var section1End = section1Start + section1.offsetHeight;
-var section2Start = section1End;
-var section2End = section2Start + section2.offsetHeight;
-var section3Start = section2End;
-var section3End = section3Start + section3.offsetHeight;
-
-var section4Start = section3End;
-var section4End = section4Start + section4.offsetHeight;
-var section5Start = section4End;
-var section5End = section5Start + section5.offsetHeight;
+const sections = document.querySelectorAll('.snap-section');
+const navButtons = document.querySelectorAll('.nav-button');
 
 main.addEventListener('scroll', () => {
   const scrollTop = main.scrollTop;
+  let activeSection = null;
 
-  if (scrollTop >= section1Start && scrollTop < section1End) {
-    paintBottonNav(0);
-    section1.classList.remove('ocult-container');
-  } else if (scrollTop >= section2Start && scrollTop < section2End) {
-    paintBottonNav(1);
-    section1.classList.add('ocult-container');
-  } else if (scrollTop >= section3Start && scrollTop < section3End) {
-    paintBottonNav(2);
-  } else if (scrollTop >= section4Start && scrollTop < section4End) {
-    paintBottonNav(3);
-  } else if (scrollTop >= section5Start && scrollTop < section5End) {
-    paintBottonNav(4);
+  sections.forEach((section, index) => {
+    const sectionStart = section.offsetTop;
+    const sectionEnd = sectionStart + section.offsetHeight;
+    const sectionMiddle = sectionStart + section.offsetHeight / 2;
+    const section20Percent = sectionStart + (section.offsetHeight * 0.2);
+    const section80Percent = sectionStart + (section.offsetHeight * 0.8);
+
+    if (scrollTop >= section20Percent && scrollTop < sectionMiddle) {
+      section.classList.remove('ocult-container');
+    } else if (scrollTop >= sectionMiddle && scrollTop < section80Percent) {
+      paintButtonNav(index);
+    } else if (scrollTop >= section80Percent && scrollTop < sectionEnd) {
+      section.classList.add('ocult-container');
+    }
+
+    if (scrollTop >= sectionStart && scrollTop < sectionMiddle) {
+      activeSection = index;
+    }
+  });
+
+  if (activeSection !== null) {
+    paintButtonNav(activeSection);
   }
 });
 
-function paintBottonNav(numNavButton) {
-  nav_buttons.forEach((element, index) => {
-    if (index == numNavButton) {
-      element.classList.add('navSelected');
+function paintButtonNav(activeIndex) {
+  navButtons.forEach((button, index) => {
+    if (index == activeIndex) {
+      button.classList.add('navSelected');
     } else {
-      element.classList.remove('navSelected');
+      button.classList.remove('navSelected');
     }
   });
 }
+
 
 /* CAROUSEL - SECTION 2 */
 const carousels = document.querySelectorAll('.carousel');
