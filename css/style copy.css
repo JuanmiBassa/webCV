@@ -412,18 +412,11 @@ h2 {
     background-color: var(--bg-light);
     padding: 10px;
     margin: 5px;
-    color: var(--bg);
 }
 
 .aboutMe-paragraph>p {
-    margin-bottom: 10px;
-}
-
-.carousel-data {
-    background-color: white;
-    padding: 5px 15px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px 2px var(--bg-light2);
+    color: var(--bg);
+    margin: 5px;
 }
 
 .aboutMe-text {
@@ -456,21 +449,20 @@ h2 {
 .prev-button,
 .next-button {
     border-radius: 5px;
-    background: white;
+    background: var(--bg-light2);
     border: 0;
     color: var(--bg-light2-dark);
     box-shadow: 0px 0px 5px 2px var(--bg-light2);
     font-size: 20px;
     cursor: pointer;
     width: 45%;
-    padding: 5px 0px;
+    height: 40px;
     transition: 0.3s;
 }
 
 .prev-button:hover,
 .next-button:hover {
-    background-color: var(--bg-light);
-    color: white;
+    background-color: var(--bg2);
 }
 
 /* SECTION 3 */
