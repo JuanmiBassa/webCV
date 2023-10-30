@@ -1,5 +1,5 @@
 window.addEventListener('load', () => {
-
+  showNextH4();
 });
 
 /* WINDOW SIZE */
@@ -16,13 +16,11 @@ function getWindowSize() {
 const h4Elements = document.querySelectorAll(".loading-title");
 let loadingTitleIndex = 0;
 
-showNextH4();
-
 function showNextH4() {
   if (loadingTitleIndex < h4Elements.length) {
     h4Elements[loadingTitleIndex].style.display = "block";
-    setTimeout(showNextH4, 1600);
     h4Elements[loadingTitleIndex].addEventListener("animationend", function () {
+      showNextH4();
       this.style.display = "none";
       this.style.animation = "";
     });
