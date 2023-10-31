@@ -104,3 +104,15 @@ nextButton.addEventListener('click', () => {
     updateCarousel();
   }
 });
+
+/* SECTION 4 */
+const projects = document.querySelectorAll('.card-project-bg');
+
+projects.forEach((project, index) => {
+  project.addEventListener('click', () => {
+    const project_image = project.querySelector('.card-project-image');
+    const project_text = project.querySelector('.card-project-text');
+    project_image.classList.toggle("card-visible");
+    project_text.classList.toggle("card-visible");
+  });
+});

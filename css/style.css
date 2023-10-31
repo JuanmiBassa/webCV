@@ -15,8 +15,14 @@
     --sublime-gradientY: linear-gradient(0deg, var(--sublime-blue) 0%, var(--sublime-pink) 100%);
     --sublime-gradientX: linear-gradient(90deg, var(--sublime-blue) 0%, var(--sublime-pink) 100%);
 
+    --shadow-sublime: 3px 3px 5px -1px var(--sublime-blue),
+        -3px -3px 5px -1px var(--sublime-pink);
+
     --shadow-dark: 3px 3px 5px -1px var(--dark),
-    -3px -3px 5px -1px var(--bg2);
+        -3px -3px 5px -1px var(--bg2);
+
+    --shadow-light: 3px 3px 5px -1px #5e5755,
+        -3px -3px 5px -1px #e2dddd;
 }
 
 * {
@@ -52,6 +58,7 @@ body {
 
 /* LOADING */
 #loading-panel {
+    cursor: wait;
     width: 100vw;
     height: 100vh;
     position: absolute;
@@ -225,7 +232,7 @@ nav {
     position: absolute;
     transform: translateX(-60px);
     text-decoration: none;
-    color: var(--secondary-text);
+    color: white;
     right: 0;
 }
 
@@ -281,7 +288,7 @@ main {
     position: absolute;
     width: 100%;
     height: 100%;
-    transform:  translateY(5px);
+    transform: translateY(5px);
 }
 
 #index-text-container {
@@ -308,11 +315,8 @@ h2 {
 }
 
 #index-buttons-container {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     margin-top: 20px;
+    width: 100%;
 }
 
 .index-button {
@@ -320,6 +324,10 @@ h2 {
     padding: 3px;
     border-radius: 10px;
     box-shadow: var(--shadow-dark);
+}
+
+.index-button:hover {
+    filter: brightness(1.3);
 }
 
 .index-button>a {
@@ -368,7 +376,7 @@ h2 {
 #section2 {
     background-color: #f2f2f2;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 
@@ -413,33 +421,36 @@ h2 {
 }
 
 .carousel-text {
-    background-color: white;
-    padding: 10px;
+    background: linear-gradient(180deg, var(--bg-light) 0%, var(--bg-light2-dark) 100%);
     border-radius: 10px;
-    box-shadow: 0px 0px 5px 2px var(--bg-light2);
+    box-shadow: var(--shadow-light);
 }
 
 .aboutMe-paragraph {
-    background-color: var(--bg-light);
+    background-color: white;
     padding: 10px;
     margin: 5px;
     color: var(--bg);
+    box-shadow: inset 0 0 10px 5px var(--bg-light);
+    border-radius: 5px;
 }
 
 .aboutMe-paragraph>p {
     margin-bottom: 10px;
 }
 
-.carousel-data {
+.personal-paragraph {
     background-color: white;
-    padding: 5px 15px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px 2px var(--bg-light2);
+    padding: 5px 10px;
+    margin: 5px;
+    color: var(--bg);
+    box-shadow: inset 0 0 10px 5px var(--bg-light);
+    border-radius: 5px;
 }
 
 .aboutMe-text {
     display: flex;
-    background-color: var(--bg-light);
+    box-shadow: inset 0 0 10px 5px var(--bg-light);
     border-radius: 10px;
     padding: 10px;
     margin: 10px 0px;
@@ -455,7 +466,7 @@ h2 {
     margin-left: 10px;
 }
 
-#carousel-buttons {
+#carousel-buttons-container {
     margin-top: 10px;
     width: 400px;
     padding: 5px;
@@ -464,24 +475,36 @@ h2 {
     align-items: center;
 }
 
+.carousel-button {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, var(--bg-light) 0%, var(--bg-light2-dark) 100%);
+    border-radius: 10px;
+    box-shadow: var(--shadow-light);
+    padding: 5px;
+}
+
 .prev-button,
 .next-button {
-    border-radius: 5px;
-    background: white;
+    width: 100%;
     border: 0;
-    color: var(--bg-light2-dark);
-    box-shadow: 0px 0px 5px 2px var(--bg-light2);
     font-size: 20px;
     cursor: pointer;
-    width: 45%;
     padding: 5px 0px;
     transition: 0.3s;
+    background-color: white;
+    box-shadow: inset 0 0 10px 5px var(--bg-light);
+    border-radius: 10px;
+    color: var(--bg-light2);
 }
 
 .prev-button:hover,
 .next-button:hover {
-    background-color: var(--bg-light);
+    background-color: var(--bg-light2);
     color: white;
+    box-shadow: none;
 }
 
 /* SECTION 3 */
@@ -498,6 +521,87 @@ h2 {
     width: 100%;
     height: 100%;
     transform: rotateX(180deg) rotateY(180deg) translateY(5px);
+}
+
+/* SECTION 4 */
+#section4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-project-bg {
+    width: 230px;
+    background-color: var();
+    box-shadow: var(--shadow-dark);
+    background: linear-gradient(0deg, var(--dark) 0%, var(--bg2) 100%);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.2s;
+    cursor: help;
+}
+
+.card-project-bg:hover {
+    box-shadow: var(--shadow-sublime);
+}
+
+.card-project-image {
+    background-color: white;
+    height: 120px;
+    width: 100%;
+    transition: 0.3s;
+    display: none;
+    position: relative;
+}
+
+.card-project-button {
+    position: absolute;
+    right: 0;
+    margin: 5px 5px 0px 0px;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    background: linear-gradient(0deg, var(--dark) 0%, var(--bg2) 100%);
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.card-project-text {
+    background-color: var(--bg);
+    box-shadow: inset 0 0 10px 5px var(--dark);
+    display: none;
+    height: 100px;
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 13px;
+    text-decoration: none;
+    color: var(--secondary-text);
+}
+
+.card-visible {
+    display: flex;
+}
+
+.card-project-title {
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    margin-top: 10px;
+    padding: 5px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -529,7 +633,7 @@ h2 {
     }
 
     /* MAIN */
-    
+
 
     /* SECTION 1 */
     #section1 {
@@ -567,9 +671,33 @@ h2 {
         width: 600px;
         transform: translate(-10%, 0%);
     }
+
+    /* SECTION 2 */
+    #section2 {
+        flex-direction: column-reverse;
+        justify-content: start;
+    }
+
+    #carousel-and-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 80px;
+    }
+
+    #img-section2 {
+        width: 70%;
+    }
+
+    /* SECTION 4 */
+    #section4-title {
+        margin-top: 80px;
+    }
 }
 
 @media screen and (max-width: 768px) {
+
     /* LOADING PANEL */
     #loading-bar-container {
         width: 300px;
@@ -578,5 +706,22 @@ h2 {
     /* SECTION 1 */
     h1 {
         font-size: 30px;
+    }
+
+    /* SECTION 2 */
+    #carousel-container {
+        width: 300px;
+    }
+
+    #carousel-buttons-container {
+        width: 300px;
+    }
+
+    #img-section2 {
+        width: 100%;
+    }
+
+    .carousel-button {
+        width: 100px;
     }
 }

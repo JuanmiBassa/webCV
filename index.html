@@ -11,7 +11,8 @@
 </head>
 
 <body>
-    <!-- <div id="loading-panel">
+    <!--
+    <div id="loading-panel">
         <div id="logo-loading-panel"><img src="./img/logoCV.png" alt=""></div>
         <div id="loading-title-container">
             <h4 class="loading-title">Building my online presence...</h4>
@@ -22,7 +23,8 @@
         <div id="loading-bar-container">
             <div id="loading-bar"></div>
         </div>
-    </div> -->
+    </div>
+    -->
 
     <header>
         <div>
@@ -49,9 +51,6 @@
                 <h2>Web Developer...</h2>
                 <div id="index-buttons-container">
                     <div class="index-button">
-                        <a href="#section2"><b>My story</b></a>
-                    </div>
-                    <div class="index-button">
                         <a href="#section5"><b>Contact me</b></a>
                     </div>
                 </div>
@@ -67,7 +66,8 @@
             <div id="img-section2">
                 <img src="./img/aboutMe_ilustration.png" alt="About me">
             </div>
-            <div>
+
+            <div id="carousel-and-buttons">
                 <div id="carousel-container">
                     <div class="carousel active">
                         <h3>About me</h3>
@@ -87,23 +87,26 @@
                     <div class="carousel">
                         <h3>Personal information</h3>
                         <div class="carousel-dividing-line"></div>
-                        <div class="carousel-data">
-                            <div class="aboutMe-text">
-                                <p><i class="fa-solid fa-user-tag"></i> Fullname</p>
-                                <p>Juan Miguel Bassa Pericas</p>
+                        <div class="carousel-text">
+                            <div class="personal-paragraph">
+                                <div class="aboutMe-text">
+                                    <p><i class="fa-solid fa-user-tag"></i> Fullname</p>
+                                    <p>Juan Miguel Bassa Pericas</p>
+                                </div>
+                                <div class="aboutMe-text">
+                                    <p><i class="fa-solid fa-calendar-days"></i> Birthdate</p>
+                                    <p>February 25, 1999</p>
+                                </div>
+                                <div class="aboutMe-text">
+                                    <p><i class="fa-solid fa-location-dot"></i> Location</p>
+                                    <p>Mallorca, Spain</p>
+                                </div>
+                                <div class="aboutMe-text">
+                                    <p><i class="fa-solid fa-at"></i> E-mail</p>
+                                    <p>Juanmi7633@gmail.com</p>
+                                </div>
                             </div>
-                            <div class="aboutMe-text">
-                                <p><i class="fa-solid fa-calendar-days"></i> Birthdate</p>
-                                <p>February 25, 1999</p>
-                            </div>
-                            <div class="aboutMe-text">
-                                <p><i class="fa-solid fa-location-dot"></i> Location</p>
-                                <p>Mallorca, Spain</p>
-                            </div>
-                            <div class="aboutMe-text">
-                                <p><i class="fa-solid fa-at"></i> E-mail</p>
-                                <p>Juanmi7633@gmail.com</p>
-                            </div>
+
                         </div>
                     </div>
                     <div class="carousel">
@@ -117,20 +120,17 @@
                         <h3>Work experience</h3>
                         <div class="carousel-dividing-line"></div>
                         <div class="carousel-text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa tempora dolorem sit a
-                                quam distinctio eveniet blanditiis esse libero atque cum, quos doloremque, sint
-                                minima
-                                magnam fugiat in, aliquid mollitia.</p>
-                            <p>Contenido 3</p>
-                            <p>Contenido 3</p>
-                            <p>Contenido 3</p>
-                            <p>Contenido 3</p>
+                            
                         </div>
                     </div>
                 </div>
-                <div id="carousel-buttons">
-                    <button class="prev-button"><i class="fa-solid fa-arrow-left"></i></button>
-                    <button class="next-button"><i class="fa-solid fa-arrow-right"></i></button>
+                <div id="carousel-buttons-container">
+                    <div class="carousel-button">
+                       <button class="prev-button"><i class="fa-solid fa-arrow-left"></i></button> 
+                    </div>
+                    <div class="carousel-button">
+                        <button class="next-button"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -139,7 +139,26 @@
             <div id="cloud-section3-img" class="no-pointer"></div>
         </section>
 
-        <section id="section4" class="snap-section"></section>
+        <section id="section4" class="snap-section">
+            <div id="section4-title">
+                <h1>Projects</h1>
+                <div class="carousel-dividing-line"></div>
+            </div>
+
+            <div class="card-project-container">
+                <div class="card-project-bg">
+                    <div class="card-project-image card-visible">
+                        <a href="#" class="card-project-button"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                    <div class="card-project-text">
+                        <p>Brief description of the project</p>
+                    </div>
+                    <div class="card-project-title">
+                        <b>Name project</b>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <section id="section5" class="snap-section"></section>
     </main>
