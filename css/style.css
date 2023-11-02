@@ -539,7 +539,7 @@ h2 {
 }
 
 .card-project-bg {
-    width: 230px;
+    width: 250px;
     background-color: var();
     box-shadow: var(--shadow-dark);
     background: linear-gradient(0deg, var(--dark) 0%, var(--bg2) 100%);
@@ -556,7 +556,7 @@ h2 {
 
 .card-project-image {
     background-color: white;
-    height: 120px;
+    height: 130px;
     width: 100%;
     transition: 0.3s;
     display: none;
@@ -691,6 +691,10 @@ h2 {
     }
 
     /* SECTION 4 */
+    #section4 {
+        justify-content: start;
+    }
+
     #section4-title {
         margin-top: 80px;
     }
