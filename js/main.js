@@ -72,7 +72,6 @@ function paintButtonNav(activeIndex) {
   });
 }
 
-
 /* CAROUSEL - SECTION 2 */
 const carousels = document.querySelectorAll('.carousel');
 const prevButton = document.querySelector('.prev-button');
@@ -106,13 +105,15 @@ nextButton.addEventListener('click', () => {
 });
 
 /* SECTION 4 */
-const projects = document.querySelectorAll('.card-project-bg');
+const cardBoxes = document.querySelectorAll('.card-box');
 
-projects.forEach((project, index) => {
-  project.addEventListener('click', () => {
-    const project_image = project.querySelector('.card-project-image');
-    const project_text = project.querySelector('.card-project-text');
-    project_image.classList.toggle("card-visible");
-    project_text.classList.toggle("card-visible");
+cardBoxes.forEach((cardBox) => {
+  const card = cardBox.querySelector('.card-project');
+  const card_button = cardBox.querySelector('.card-button');
+  card.addEventListener('click', () => {
+    card.classList.toggle("rotated-card");
+  });
+  card_button.addEventListener('click', () => {
+    card.classList.toggle("rotated-card");
   });
 });
