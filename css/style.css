@@ -5,9 +5,9 @@
     --bg2: #273036;
     --bg3: #83929d;
 
-    --bg-light: #e9dbdc;
-    --bg-light2: #b3a9a7;
-    --bg-light2-dark: #817876;
+    --bg-light: #eee2e3;
+    --bg-light2: #ccc4c3;
+    --bg-light2-dark: #a59b99;
 
     --secondary-text: #cecece;
     --sublime-pink: #FC466B;
@@ -661,7 +661,6 @@ h2 {
     nav {
         top: 100vh;
         left: 0;
-        bottom: 0;
         width: 100vw;
         height: 80px;
         flex-direction: row;
@@ -669,7 +668,6 @@ h2 {
         border-radius: 20px 20px 0px 0px;
         padding: 0px 0px;
         box-shadow: none;
-        position: absolute;
     }
 
     .nav-link:hover::before {
@@ -763,7 +761,7 @@ h2 {
 
     /* SECTION 2 */
     #carousel-container {
-        width: 300px;
+        width: 80vw;
     }
 
     #img-section2 {
@@ -771,7 +769,7 @@ h2 {
     }
 
     .aboutMe-text {
-        flex-direction: column;
+        flex-wrap: wrap;
         align-items: start;
     }
 
