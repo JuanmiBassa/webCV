@@ -546,6 +546,13 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0px 100px;
+}
+
+#skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -566,9 +573,19 @@ h2 {
 
 .skill-logo {
     z-index: 1;
+    text-shadow: 0px 3px 5px var(--dark);
+}
+
+.skill-logo i {
     font-size: 50px;
     color: white;
-    text-shadow: 0px 3px 5px var(--dark);
+}
+
+.skill-logo p {
+    text-align: center;
+    color: var(--secondary-text);
+    font-weight: bold;
+    font-size: 13px;
 }
 
 .skill-water {
@@ -598,25 +615,46 @@ h2 {
   
 #skill-html {
     height: 90%;
-    background: linear-gradient(0deg, #b90000 0%, #ff3300 100%);
+    background: linear-gradient(0deg, #b94a00 0%, #ff9100 100%);
 }
 
 #skill-css {
     height: 85%;
-    background: linear-gradient(0deg, #000cb9 0%, #00b7ff 100%);
+    background: linear-gradient(0deg, #030c91 0%, #00b7ff 100%);
 }
 
 #skill-js {
     height: 60%;
-    background: linear-gradient(0deg, #b94a00 0%, orange 100%);
+    background: linear-gradient(0deg, #7c5602 0%, #ffe600 100%);
+}
+
+#skill-bbdd {
+    height: 70%;
+    background: linear-gradient(0deg, #4d0363 0%, #a706e6 100%);
 }
   
 #skill-java {
     height: 40%;
     background: linear-gradient(0deg, #4c4e4e 0%, #939496 100%);
 }
-  
 
+#skill-php {
+    height: 30%;
+    background: linear-gradient(0deg, #02552b 0%, #07dd72 100%);
+}
+
+#skill-github {
+    height: 40%;
+    background: linear-gradient(0deg, #000000 0%, #393f3f 100%);
+}
+  
+#skill-img {
+    width: 700px;
+}
+
+#skill-img img {
+    width: 100%;
+}
 
 /* SECTION 4 */
 #section4 {
@@ -631,8 +669,7 @@ h2 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin: 0px 100px;
 }
 
 .card-box {
@@ -780,7 +817,7 @@ form {
         left: 0;
         bottom: 0;
         width: 100vw;
-        height: 80px;
+        height: 60px;
         flex-direction: row;
         transform: translate(-0%, -100%);
         border-radius: 20px 20px 0px 0px;
@@ -848,6 +885,21 @@ form {
 
     #img-section2 {
         width: 70%;
+    }
+
+    /* SECTION 3 */
+    .section-title {
+        width: 300px;
+        margin-top: 80px;
+    }
+
+    #skills-container {
+        margin: 0px;
+        flex-direction: column;
+    }
+
+    #skill-img {
+        width: 100%;
     }
 
     /* SECTION 4 */
