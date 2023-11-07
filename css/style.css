@@ -574,7 +574,7 @@ h2 {
 .skill-water {
     width: 100%;
     clip-path: path('M0 10 Q10 0, 20 10 Q30 20, 40 10 Q50 0, 60 10 Q70 20, 80 10 Q90 0, 100 10 L100 100 L0 100 Z');
-    animation: moveWater 10s linear infinite;
+    animation: moveWater 5s linear infinite;
     position: absolute;
     border-radius: 0px 0px 20px 20px;
     bottom: 0;
@@ -776,8 +776,9 @@ form {
 
     /* NAV */
     nav {
-        top: 100vh;
+        top: 100%;
         left: 0;
+        bottom: 0;
         width: 100vw;
         height: 80px;
         flex-direction: row;
