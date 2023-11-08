@@ -117,3 +117,4 @@ cardBoxes.forEach((cardBox) => {
     card.classList.toggle("rotated-card");
   });
 });
+

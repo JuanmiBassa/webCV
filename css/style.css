@@ -314,19 +314,21 @@ h2 {
     color: transparent;
 }
 
-#index-buttons-container {
+.myStyle-buttons-container {
     margin-top: 20px;
     width: 100%;
 }
 
-.index-button {
+.myStyle-button {
     background: linear-gradient(0deg, var(--dark) 0%, var(--bg2) 100%);
     padding: 3px;
+    width: 100%;
     border-radius: 10px;
     box-shadow: var(--shadow-dark);
 }
 
-.index-button>a {
+.myStyle-button>a, .myStyle-button>button {
+    border: 0;
     padding: 0px 10px 0px 10px;
     height: 35px;
     background-color: var(--bg);
@@ -339,7 +341,7 @@ h2 {
     transition: 0.2s;
 }
 
-.index-button>a:hover {
+.myStyle-button>a:hover, .myStyle-button>button:hover {
     background-color: transparent;
 }
 
@@ -634,7 +636,7 @@ h2 {
 }
   
 #skill-java {
-    height: 40%;
+    height: 50%;
     background: linear-gradient(0deg, #4c4e4e 0%, #939496 100%);
 }
 
@@ -644,7 +646,7 @@ h2 {
 }
 
 #skill-github {
-    height: 40%;
+    height: 80%;
     background: linear-gradient(0deg, #000000 0%, #393f3f 100%);
 }
   
@@ -653,6 +655,7 @@ h2 {
 }
 
 #skill-img img {
+    transform: rotateY(180deg);
     width: 100%;
 }
 
@@ -767,35 +770,73 @@ h2 {
 /* SECTION 5 */
 #section5 {
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#form-container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
     flex-direction: column;
+    width: 400px;
 }
 
 #section5-title {
-    width: 400px;
-    margin: 80px 0px 0px 100px;
-}
-
-#form-img-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: inherit;
 }
 
 form {
-    width: 400px;
-    background: var(--bg3);
+    width: inherit;
+    box-shadow: var(--shadow-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
 }
 
 .form-input {
     display: flex;
     flex-direction: column;
+    width: 90%;
+}
+
+.form-input input {
+    height: 30px;
+    background-color: var(--bg2);
+    border-radius: 5px;
+    border: 0;
+    border-bottom: 2px var(--bg3) solid;
+    color: white;
+    padding: 0px 10px;
+}
+
+.form-input input:focus {
+    outline: none;
+}
+
+#submit-container {
+    width: 100px;
+}
+
+.form-input textarea {
+    height: 100px;
+    background-color: var(--bg2);
+    border-radius: 5px;
+    border: 0;
+    border-bottom: 2px var(--bg3) solid;
+    color: white;
+    padding: 0px 10px;
+    resize: none;
 }
 
 #img-contactMe {
-    width: 500px;
+    width: 400px;
 }
 
 #img-contactMe>img {
+    transform: rotateY(180deg);
     width: 100%;
 }
 
@@ -899,7 +940,7 @@ form {
     }
 
     #skill-img {
-        width: 100%;
+        width: 80%;
     }
 
     /* SECTION 4 */
@@ -949,5 +990,10 @@ form {
 
     .carousel-button {
         width: 100px;
+    }
+
+    /* SECTION 3 */
+    #skill-img {
+        width: 100%;
     }
 }

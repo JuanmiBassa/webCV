@@ -49,8 +49,8 @@
                 <h3 class="subtitle">Hi, I'm</h3>
                 <h1>Juanmi Bassa</h1>
                 <h2>Web Developer...</h2>
-                <div id="index-buttons-container">
-                    <div class="index-button">
+                <div class="myStyle-buttons-container">
+                    <div class="myStyle-button">
                         <a href="#section5"><b>Contact me</b></a>
                     </div>
                 </div>
@@ -147,7 +147,7 @@
                         </div>
                         <div id="skill-html" class="skill-water"></div>
                     </div>
-    
+
                     <div class="skill-bg">
                         <div class="skill-logo">
                             <i class="fa-brands fa-css3-alt"></i>
@@ -155,7 +155,7 @@
                         </div>
                         <div id="skill-css" class="skill-water"></div>
                     </div>
-    
+
                     <div class="skill-bg">
                         <div class="skill-logo">
                             <i class="fa-brands fa-square-js"></i>
@@ -163,7 +163,7 @@
                         </div>
                         <div id="skill-js" class="skill-water"></div>
                     </div>
-    
+
                     <div class="skill-bg">
                         <div class="skill-logo">
                             <i class="fa-solid fa-database"></i>
@@ -171,7 +171,7 @@
                         </div>
                         <div id="skill-bbdd" class="skill-water"></div>
                     </div>
-    
+
                     <div class="skill-bg">
                         <div class="skill-logo">
                             <i class="fa-brands fa-java"></i>
@@ -179,7 +179,7 @@
                         </div>
                         <div id="skill-java" class="skill-water"></div>
                     </div>
-    
+
                     <div class="skill-bg">
                         <div class="skill-logo">
                             <i class="fa-brands fa-php"></i>
@@ -187,7 +187,7 @@
                         </div>
                         <div id="skill-php" class="skill-water"></div>
                     </div>
-    
+
                     <div class="skill-bg">
                         <div class="skill-logo">
                             <i class="fa-brands fa-github"></i>
@@ -283,29 +283,35 @@
         </section>
 
         <section id="section5" class="snap-section">
-            <div id="section5-title">
-                <h1>Contact me</h1>
-                <div class="carousel-dividing-line"></div>
-            </div>
-            <div id="form-img-container">
+            <div id="form-container">
+                <div id="section5-title">
+                    <h1>Contact me</h1>
+                    <div class="carousel-dividing-line"></div>
+                </div>
                 <form action="">
                     <div class="form-input">
-                        <label for="">Name</label>
-                        <input type="text">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" required>
                     </div>
-                    <div>
-                        <label for="">Email</label>
-                        <input type="email">
+                    <div class="form-input">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
                     </div>
-                    <div>
-                        <label for="">Message</label>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <div class="form-input">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" required></textarea>
+                    </div>
+                    <div id="submit-container">
+                        <div class="myStyle-buttons-container">
+                            <div class="myStyle-button">
+                                <button type="submit">SEND</button>
+                            </div>
+                        </div>
                     </div>
                 </form>
-
-                <div id="img-contactMe">
-                    <img src="./img/skills_ilustration.png" alt="">
-                </div>
+            </div>
+            <div id="img-contactMe">
+                <img src="./img/contactMe_ilustration.png" alt="">
             </div>
         </section>
     </main>
