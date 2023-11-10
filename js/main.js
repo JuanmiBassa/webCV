@@ -1,7 +1,3 @@
-window.addEventListener('load', () => {
-  showNextH4();
-});
-
 /* WINDOW SIZE */
 let windowWidth = 0;
 let windowHeight = 0;
@@ -15,6 +11,10 @@ function getWindowSize() {
 /* LOADING PANEL */
 const h4Elements = document.querySelectorAll(".loading-title");
 let loadingTitleIndex = 0;
+
+window.addEventListener('load', () => {
+  showNextH4();
+});
 
 function showNextH4() {
   if (loadingTitleIndex < h4Elements.length) {
@@ -65,6 +65,53 @@ function paintButtonNav(activeIndex) {
       button.classList.remove('navSelected');
     }
   });
+}
+
+/* DINAMIC TEXT - SECTION 1 */
+var phrases = [
+  "Web Developer...",
+  "Front-end Developer...",
+  "Back-end Developer...",
+];
+
+// Elemento h2
+var h2Element = document.querySelector("#dinamic-text");
+var letterIndex = 0;
+
+var intervalo = setInterval(function() {
+  var fraseActual = phrases[letterIndex];
+
+  writePhrase(fraseActual);
+
+  letterIndex++;
+
+  if (letterIndex === phrases.length) {
+    letterIndex = 0;
+  }
+
+  setTimeout(function() {
+    deletePhrase();
+  }, fraseActual.length * 50 + 1000);
+}, 5000);
+
+function writePhrase(fraseActual) {
+  for (var i = fraseActual.length; i >= 0; i--) {
+    (function(i) {
+      setTimeout(function() {
+        h2Element.textContent = fraseActual.substring(0, i);
+      }, (fraseActual.length - i) * 50);
+    })(i);
+  }
+}
+
+function deletePhrase() {
+  for (var j = 0; j <= phrases[letterIndex].length; j++) {
+    (function(j) {
+      setTimeout(function() {
+        h2Element.textContent = phrases[letterIndex].substring(0, j);
+      }, j * 50);
+    })(j);
+  }
 }
 
 /* CAROUSEL - SECTION 2 */

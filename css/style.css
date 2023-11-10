@@ -59,7 +59,6 @@ body {
 
 /* LOADING */
 #loading-panel {
-    cursor: wait;
     width: 100vw;
     height: 100vh;
     position: absolute;
@@ -313,6 +312,7 @@ h2 {
     background-image: var(--sublime-gradientX);
     -webkit-background-clip: text;
     color: transparent;
+    height: 30px;
 }
 
 .myStyle-buttons-container {
@@ -387,6 +387,7 @@ h2 {
 
 #img-section2 {
     width: 400px;
+    margin-right: 50px;
 }
 
 #img-section2>img {
@@ -399,6 +400,7 @@ h2 {
     overflow: hidden;
     border-radius: 10px;
     padding: 5px;
+    margin-right: 50px
 }
 
 .carousel {
@@ -428,7 +430,12 @@ h2 {
 .carousel-text {
     border-radius: 10px;
     box-shadow: inset 0 0 10px 5px var(--bg-light2);
-    padding: 30px;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
 }
 
 .aboutMe-paragraph {
@@ -438,10 +445,6 @@ h2 {
     color: var(--bg);
     box-shadow: inset 0 0 10px 5px var(--bg-light);
     border-radius: 5px;
-}
-
-.aboutMe-paragraph>p {
-    margin-bottom: 10px;
 }
 
 .personal-paragraph {
@@ -459,10 +462,7 @@ h2 {
     box-shadow: inset 0 0 10px 5px var(--bg-light);
     border-radius: 10px;
     padding: 10px;
-}
-
-.aboutMe-margin {
-    margin-top: 10px;
+    width: 100%;
 }
 
 .aboutMe-text p:first-child {
@@ -475,6 +475,18 @@ h2 {
     color: var(--bg);
     font-size: 14px;
     font-weight: bold;
+}
+
+.studies-work-text {
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 10px 5px var(--bg-light);
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    font-weight: bold;
+    color: var(--bg);
+    font-size: 14px;
 }
 
 #carousel-buttons-container {
@@ -558,6 +570,7 @@ h2 {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    max-width: 60%;
 }
 
 .skill-bg {
@@ -578,6 +591,10 @@ h2 {
 .skill-logo {
     z-index: 1;
     text-shadow: 0px 3px 5px var(--dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .skill-logo i {
@@ -628,7 +645,7 @@ h2 {
 }
 
 #skill-js {
-    height: 60%;
+    height: 65%;
     background: linear-gradient(0deg, #7c5602 0%, #ffe600 100%);
 }
 
@@ -653,7 +670,7 @@ h2 {
 }
   
 #skill-img {
-    width: 700px;
+    width: 500px;
 }
 
 #skill-img img {
@@ -847,12 +864,13 @@ form {
 }
 
 #submit-container {
-    width: 200px;
+    width: 80%;
     margin-bottom: 20px;
 }
 
 #img-contactMe {
     width: 350px;
+    margin-left: 50px;
 }
 
 #img-contactMe>img {
@@ -936,6 +954,14 @@ form {
         justify-content: start;
     }
 
+    #img-section2 {
+        margin-right: 0;
+    }
+
+    #carousel-container {
+        margin-right: 0px;
+    }
+
     #carousel-and-buttons {
         display: flex;
         justify-content: center;
@@ -955,8 +981,8 @@ form {
         flex-direction: column;
     }
 
-    #skill-img {
-        width: 500px;
+    #skills {
+        max-width: none;
     }
 
     /* SECTION 4 */
@@ -987,6 +1013,7 @@ form {
     }
 
     #img-contactMe {
+        margin-left: 0;
         margin-bottom: 50px;
     }
 }
@@ -1018,11 +1045,11 @@ form {
     }
 
     #carousel-buttons-container {
-        width: 300px;
+        width: 80vw;
     }
 
     .carousel-button {
-        width: 100px;
+        width: 40%;
     }
 
     /* SECTION 3 */
