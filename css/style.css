@@ -227,7 +227,7 @@ nav {
 
 .nav-link:hover::before {
     background-color: var(--bg2);
-    text-wrap: nowrap;
+    white-space: nowrap;
     padding: 10px 20px 10px 10px;
     clip-path: polygon(0 0, 80% 0, 100% 50%, 80% 100%, 0 100%);
     position: absolute;
