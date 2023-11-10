@@ -3,6 +3,7 @@
     --bg: #181b1e;
     --bg-transparent: #181b1ec4;
     --bg2: #273036;
+    --color-shadow: #324049;
     --bg3: #515d66;
 
     --bg-light: #eee2e3;
@@ -19,7 +20,7 @@
         -3px -3px 5px -1px var(--sublime-pink);
 
     --shadow-dark: 3px 3px 5px -1px var(--dark),
-        -3px -3px 5px -1px var(--bg2);
+        -3px -3px 5px -1px var(--color-shadow);
 
     --shadow-light: 3px 3px 5px -1px #5e5755,
         -3px -3px 5px -1px #e2dddd;
@@ -328,8 +329,8 @@ h2 {
 }
 
 .myStyle-button>a, .myStyle-button>button {
+    width: 100%;
     border: 0;
-    padding: 0px 10px 0px 10px;
     height: 35px;
     background-color: var(--bg);
     border-radius: 10px;
@@ -339,6 +340,7 @@ h2 {
     text-decoration: none;
     color: white;
     transition: 0.2s;
+    cursor: pointer;
 }
 
 .myStyle-button>a:hover, .myStyle-button>button:hover {
@@ -384,7 +386,7 @@ h2 {
 }
 
 #img-section2 {
-    width: 40%;
+    width: 400px;
 }
 
 #img-section2>img {
@@ -777,7 +779,7 @@ h2 {
 #form-container {
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     flex-direction: column;
     width: 400px;
 }
@@ -794,12 +796,20 @@ form {
     justify-content: center;
     flex-direction: column;
     border-radius: 10px;
+    background-color: var(--bg);
 }
 
 .form-input {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     width: 90%;
+    margin-top: 10px;
+}
+
+.form-input label {
+    transform: translateX(5px);
+    color: var(--secondary-text);
+    transition: 0.2s;
 }
 
 .form-input input {
@@ -816,8 +826,9 @@ form {
     outline: none;
 }
 
-#submit-container {
-    width: 100px;
+.form-input input:focus + label,
+.form-input textarea:focus + label {
+    transform: translateX(20px);
 }
 
 .form-input textarea {
@@ -827,12 +838,21 @@ form {
     border: 0;
     border-bottom: 2px var(--bg3) solid;
     color: white;
-    padding: 0px 10px;
+    padding: 5px 10px;
     resize: none;
 }
 
+.form-input textarea:focus {
+    outline: none;
+}
+
+#submit-container {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
 #img-contactMe {
-    width: 400px;
+    width: 350px;
 }
 
 #img-contactMe>img {
@@ -924,10 +944,6 @@ form {
         margin-top: 80px;
     }
 
-    #img-section2 {
-        width: 70%;
-    }
-
     /* SECTION 3 */
     .section-title {
         width: 300px;
@@ -940,7 +956,7 @@ form {
     }
 
     #skill-img {
-        width: 80%;
+        width: 500px;
     }
 
     /* SECTION 4 */
@@ -955,6 +971,23 @@ form {
 
     .cards-project-container {
         margin: 0;
+    }
+
+    /* SECTION 5 */
+    #section5 {
+        flex-direction: column;
+    }
+
+    #form-container {
+        margin-top: 80px;
+    }
+
+    #section5-title {
+        width: 80%;
+    }
+
+    #img-contactMe {
+        margin-bottom: 50px;
     }
 }
 
@@ -994,6 +1027,15 @@ form {
 
     /* SECTION 3 */
     #skill-img {
+        width: 100%;
+    }
+
+    /* SECTION 5 */
+    #form-container {
+        width: 90%;
+    }
+
+    #img-contactMe {
         width: 100%;
     }
 }
