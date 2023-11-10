@@ -28,6 +28,14 @@ function showNextH4() {
   }
 }
 
+const loadingPanel = document.getElementById('loading-panel');
+
+loadingPanel.addEventListener('animationend', () => {
+  setTimeout(() => {
+    loadingPanel.style.display = 'none';
+}, 4000);
+});
+
 /* NAV BUTTON COLOR */
 const main = document.querySelector('main');
 const sections = document.querySelectorAll('.snap-section');
@@ -78,7 +86,7 @@ var phrases = [
 var h2Element = document.querySelector("#dinamic-text");
 var letterIndex = 0;
 
-var intervalo = setInterval(function() {
+var intervalo = setInterval(function () {
   var fraseActual = phrases[letterIndex];
 
   writePhrase(fraseActual);
@@ -89,15 +97,15 @@ var intervalo = setInterval(function() {
     letterIndex = 0;
   }
 
-  setTimeout(function() {
+  setTimeout(function () {
     deletePhrase();
   }, fraseActual.length * 50 + 1000);
 }, 5000);
 
 function writePhrase(fraseActual) {
   for (var i = fraseActual.length; i >= 0; i--) {
-    (function(i) {
-      setTimeout(function() {
+    (function (i) {
+      setTimeout(function () {
         h2Element.textContent = fraseActual.substring(0, i);
       }, (fraseActual.length - i) * 50);
     })(i);
@@ -106,8 +114,8 @@ function writePhrase(fraseActual) {
 
 function deletePhrase() {
   for (var j = 0; j <= phrases[letterIndex].length; j++) {
-    (function(j) {
-      setTimeout(function() {
+    (function (j) {
+      setTimeout(function () {
         h2Element.textContent = phrases[letterIndex].substring(0, j);
       }, j * 50);
     })(j);
