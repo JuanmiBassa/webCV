@@ -1,22 +1,13 @@
-# 1.1. TEXT ALTERNATIVES
-   # 1.1.1 NON-TEXT CONTENT
-      No.
-      Solucionado: 1. Botones de navegación con texto 
-                  para speakers y en dispositivos móviles.
-
-# 1.2. TIME BASED MEDIA
-   # No aplica
-# 2.1. KEYBOARD ACCESSIBLE
-   # 2.1.1: Sí o No (Solucionado)
-
-
+# Auditado con estandar `WCAG 2.0`
 
 ## 1.1 Text Alternatives
    * 1.1.1 Non-text Content
-      > Mal. Solucionado.
+      > Mal.
+      > Solucionado.
 
    * 1.2 Time-based Media
       - 1.2.1 Audio-only and Video-only (Prerecorded)
+         > No aplica
       - 1.2.2 Captions (Prerecorded)
       - 1.2.3 Audio Description or Media Alternative (Prerecorded)
       - 1.2.4 Captions (Live)
