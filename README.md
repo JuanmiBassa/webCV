@@ -13,6 +13,9 @@
 
 ## 1.1 Text Alternatives
    * 1.1.1 Non-text Content
+      No.
+      Solucionado: 1. Botones de navegación con texto 
+                  para speakers y en dispositivos móviles.
    * 1.2 Time-based Media
       - 1.2.1 Audio-only and Video-only (Prerecorded)
       - 1.2.2 Captions (Prerecorded)
