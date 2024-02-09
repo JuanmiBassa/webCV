@@ -1,5 +1,7 @@
-# Auditado con estandar `WCAG 2.0`
+> [!NOTE]
+> Auditado con estandar `WCAG 2.0`
 
+# Perceivable
 ## 1.1 Text Alternatives
    * 1.1.1 Non-text Content
       > Mal.
@@ -16,12 +18,12 @@
       - 1.2.7 Extended Audio Description (Prerecorded)
       - 1.2.8 Media Alternative (Prerecorded)
       - 1.2.9 Audio-only (Live)
-   # 1.3 Adaptable
-      # 1.3.1 Info and Relationships
-      # 1.3.2 Meaningful Sequence
-      # 1.3.3 Sensory Characteristics
-      # 1.3.4 Orientation
-   # 1.3.5 Identify Input Purpose
+   * 1.3 Adaptable
+      - 1.3.1 Info and Relationships
+      - 1.3.2 Meaningful Sequence
+      - 1.3.3 Sensory Characteristics
+      - 1.3.4 Orientation
+      - 1.3.5 Identify Input Purpose
 1.3.6 Identify Purpose
 1.4 Distinguishable
 1.4.1 Use of Color
@@ -37,7 +39,8 @@
 1.4.11 Non-text Contrast
 1.4.12 Text Spacing
 1.4.13 Content on Hover or Focus
-Operable
+
+# Operable
 2.1 Keyboard Accessible
 2.1.1 Keyboard
 2.1.2 No Keyboard Trap
