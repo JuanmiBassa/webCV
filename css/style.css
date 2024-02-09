@@ -257,6 +257,11 @@ nav {
     content: "Contact me";
 }
 
+.nav-link p {
+    visibility: hidden;
+    font-size: 0px;
+}
+
 /* MAIN */
 main {
     width: 100vw;
@@ -906,12 +911,24 @@ form {
         box-shadow: none;
     }
 
+    .nav-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
     .nav-link:hover::before {
         display: none;
     }
 
-    /* MAIN */
+    .nav-link p {
+        visibility: visible;
+        font-size: 10px;
+        color: white;
+    }
 
+    /* MAIN */
 
     /* SECTION 1 */
     #section1 {
