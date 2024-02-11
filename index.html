@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <!--
+    
     <div id="loading-panel">
         <div id="logo-loading-panel"><img src="./img/logoCV.png" alt="Logo CV - Juanmi Bassa Pericas"></div>
         <div id="loading-title-container">
@@ -24,11 +24,13 @@
             <div id="loading-bar"></div>
         </div>
     </div>
-    -->
+    
 
     <header>
         <div>
-            <a href="https://github.com/juanmibassa" target="_blank" class="link-header"><i class="fa-brands fa-github"></i></a>
+            <a href="https://github.com/juanmibassa" target="_blank" class="link-header" aria-label="Go to Juanmi Bassa's GitHub profile">
+                <i class="fa-brands fa-github" aria-label="Github icon" aria-hidden="true"></i>
+            </a>
             <a href="#section1" class="link-header"><img id="logoCV" src="./img/logoCV.png"
                     alt="Logo CV - Juanmi Bassa Pericas"></a>
         </div>
@@ -132,10 +134,10 @@
                 </div>
                 <div id="carousel-buttons-container">
                     <div class="carousel-button">
-                        <button class="prev-button"><i class="fa-solid fa-arrow-left"></i></button>
+                        <button class="prev-button" aria-label="Previous personal information"><i class="fa-solid fa-arrow-left"></i></button>
                     </div>
                     <div class="carousel-button">
-                        <button class="next-button"><i class="fa-solid fa-arrow-right"></i></button>
+                        <button class="next-button" aria-label="Next personal information"><i class="fa-solid fa-arrow-right"></i></button>
                     </div>
                 </div>
             </div>
@@ -149,7 +151,7 @@
             </div>
 
             <div id="skills-container">
-                <div id="skills">
+                <div id="skills" tabindex="0">
                     <div class="skill-bg">
                         <div class="skill-logo">
                             <i class="fa-brands fa-html5"></i>
@@ -221,7 +223,7 @@
             <div class="cards-project-container">
 
                 <div class="card-box">
-                    <div class="card-project">
+                    <div class="card-project" tabindex="0">
                         <div class="front">
                             <div class="card-image no-pointer">
                                 <img src="./img/projects/bmo-project.png" alt="BMO SVG project image">
@@ -231,7 +233,7 @@
                             </div>
                             <div class="card-button">
                                 <a href="https://lenguajemarcas.netlify.app/primerSVG/BMO.svg" target="_blank">
-                                    VISIT <i class="fa-solid fa-link"></i>
+                                    <u>VISIT</u> <i class="fa-solid fa-link"></i>
                                 </a>
                             </div>
                         </div>
@@ -244,7 +246,7 @@
                 </div>
 
                 <div class="card-box">
-                    <div class="card-project">
+                    <div class="card-project" tabindex="0">
                         <div class="front">
                             <div class="card-image no-pointer">
                                 <img src="./img/projects/flotaEspacial-project.png" alt="Flota Espacial project image">
@@ -254,7 +256,7 @@
                             </div>
                             <div class="card-button">
                                 <a href="https://lenguajemarcas.netlify.app/flotaespacial/hundir" target="_blank">
-                                    VISIT <i class="fa-solid fa-link"></i>
+                                    <u>VISIT</u> <i class="fa-solid fa-link"></i>
                                 </a>
                             </div>
                         </div>
@@ -267,7 +269,7 @@
                 </div>
 
                 <div class="card-box">
-                    <div class="card-project">
+                    <div class="card-project" tabindex="0">
                         <div class="front">
                             <div class="card-image no-pointer">
                                 <img src="./img/projects/nasaAPI-project.png" alt="API NASA Project image">
@@ -277,7 +279,7 @@
                             </div>
                             <div class="card-button">
                                 <a href="https://lenguajemarcas.netlify.app/jsonapi/jsonapi" target="_blank">
-                                    VISIT <i class="fa-solid fa-link"></i>
+                                    <u>VISIT</u> <i class="fa-solid fa-link"></i>
                                 </a>
                             </div>
                         </div>
@@ -300,22 +302,22 @@
                 </div>
                 <form action="#" method="post">
                     <div class="form-input">
-                        <input type="text" name="name" id="name" required>
+                        <input type="text" name="name" id="name" placeholder="Your name" required>
                         <label for="name">Name</label>
                     </div>
                     <div class="form-input">
-                        <input type="email" name="email" id="email" required>
+                        <input type="email" name="email" id="email" placeholder="Your contact gmail" required>
                         <label for="email">Email</label>
                     </div>
                     <div class="form-input">
-                        <textarea name="message" id="message" required></textarea>
+                        <textarea name="message" id="message" placeholder="Message" required></textarea>
                         <label for="message">Message</label>
                     </div>
+                    <div><p id="error_form"></p></div>
                     <div id="submit-container">
                         <div class="myStyle-buttons-container">
                             <div class="myStyle-button">
-                                <button type="button">SEND</button>
-                               <!-- <button type="submit">SEND</button> -->
+                                <button type="submit">SEND</button>
                             </div>
                         </div>
                     </div>

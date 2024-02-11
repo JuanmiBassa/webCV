@@ -168,3 +168,13 @@ cardBoxes.forEach((cardBox) => {
   });
 });
 
+/* FORM CONTACT ME */
+const form_name = document.querySelector('#name');
+const error_form = document.querySelector('#error_form');
+const expr = /^[a-zA-Z\s]+$/;
+
+form_name.addEventListener('input', () => {
+  if (form_name.value.length == 0) error_form.innerHTML = ``
+  else if (!expr.test(form_name.value)) error_form.innerHTML = `The name cannot have special characters.`;
+  else error_form.innerHTML = ``;
+})
