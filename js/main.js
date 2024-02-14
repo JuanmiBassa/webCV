@@ -9,12 +9,14 @@ function getWindowSize() {
 }
 
 /* LOADING PANEL */
+
 const h4Elements = document.querySelectorAll(".loading-title");
 let loadingTitleIndex = 0;
 
 window.addEventListener('load', () => {
   showNextH4();
 });
+
 
 function showNextH4() {
   if (loadingTitleIndex < h4Elements.length) {

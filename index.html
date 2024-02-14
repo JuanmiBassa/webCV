@@ -7,6 +7,7 @@
     <title>CV - Juanmi Bassa Pericas</title>
     <link rel="shortcut icon" href="./img/logoCV.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preload" href="./img/index_ilustration.png" as="image">
     <script src="https://kit.fontawesome.com/e2a5c63cd2.js" crossorigin="anonymous"></script>
 </head>
 
@@ -24,7 +25,6 @@
             <div id="loading-bar"></div>
         </div>
     </div>
-    
 
     <header>
         <div>
@@ -37,11 +37,21 @@
     </header>
 
     <nav>
-        <a href="#section1" class="nav-link" aria-label="Go to Main"><i class="nav-button navSelected fa-solid fa-house"></i><p>Home</p></a>
-        <a href="#section2" class="nav-link" aria-label="Go to About me"><i class="nav-button fa-solid fa-envelope-open-text"></i><p>About me</p></a>
-        <a href="#section3" class="nav-link" aria-label="Go to Skills"><i class="nav-button fa-solid fa-chart-simple"></i><p>Skills</p></a>
-        <a href="#section4" class="nav-link" aria-label="Go to Projects"><i class="nav-button fa-solid fa-diagram-project"></i><p>Projects</p></a>
-        <a href="#section5" class="nav-link" aria-label="Go to Contact me"><i class="nav-button fa-solid fa-address-book"></i><p>Contact me</p></a>
+        <a href="#section1" class="nav-link" aria-label="Go to Home section">
+            <i class="nav-button navSelected fa-solid fa-house"></i><p>Home</p>
+        </a>
+        <a href="#section2" class="nav-link" aria-label="Go to About me section">
+            <i class="nav-button fa-solid fa-envelope-open-text"></i><p>About me</p>
+        </a>
+        <a href="#section3" class="nav-link" aria-label="Go to Skills section">
+            <i class="nav-button fa-solid fa-chart-simple"></i><p>Skills</p>
+        </a>
+        <a href="#section4" class="nav-link" aria-label="Go to Projects section">
+            <i class="nav-button fa-solid fa-diagram-project"></i><p>Projects</p>
+        </a>
+        <a href="#section5" class="nav-link" aria-label="Go to Contact me section">
+            <i class="nav-button fa-solid fa-address-book"></i><p>Contact me</p>
+        </a>
     </nav>
 
     <main>
@@ -66,7 +76,7 @@
 
         <section id="section2" class="snap-section">
             <div id="img-section2">
-                <img src="./img/aboutMe_ilustration.png" alt="About me image">
+                <img src="./img/aboutMe_ilustration.png" alt="About me image" loading="lazy">
             </div>
 
             <div id="carousel-and-buttons">
@@ -209,7 +219,7 @@
                     </div>
                 </div>
                 <div id="skill-img">
-                    <img src="./img/skills_ilustration.png" alt="skills image">
+                    <img src="./img/skills_ilustration.png" alt="skills image" loading="lazy">
                 </div>
             </div>
         </section>
@@ -226,13 +236,13 @@
                     <div class="card-project" tabindex="0">
                         <div class="front">
                             <div class="card-image no-pointer">
-                                <img src="./img/projects/bmo-project.png" alt="BMO SVG project image">
+                                <img src="./img/projects/bmo-project.png" alt="BMO SVG project image" loading="lazy">
                             </div>
                             <div class="card-title">
                                 <b>BMO SVG</b>
                             </div>
                             <div class="card-button">
-                                <a href="https://lenguajemarcas.netlify.app/primerSVG/BMO.svg" target="_blank">
+                                <a href="https://lenguajemarcas.netlify.app/primerSVG/BMO.svg" target="_blank" >
                                     <u>VISIT</u> <i class="fa-solid fa-link"></i>
                                 </a>
                             </div>
@@ -249,7 +259,7 @@
                     <div class="card-project" tabindex="0">
                         <div class="front">
                             <div class="card-image no-pointer">
-                                <img src="./img/projects/flotaEspacial-project.png" alt="Flota Espacial project image">
+                                <img src="./img/projects/flotaEspacial-project.png" alt="Flota Espacial project image" loading="lazy">
                             </div>
                             <div class="card-title">
                                 <b>Flota Espacial</b>
@@ -272,7 +282,7 @@
                     <div class="card-project" tabindex="0">
                         <div class="front">
                             <div class="card-image no-pointer">
-                                <img src="./img/projects/nasaAPI-project.png" alt="API NASA Project image">
+                                <img src="./img/projects/nasaAPI-project.png" alt="API NASA Project image" loading="lazy">
                             </div>
                             <div class="card-title">
                                 <b>API NASA</b>
@@ -324,7 +334,7 @@
                 </form>
             </div>
             <div id="img-contactMe">
-                <img src="./img/contactMe_ilustration.png" alt="contact me image">
+                <img src="./img/contactMe_ilustration.png" alt="contact me image" loading="lazy">
             </div>
         </section>
     </main>
