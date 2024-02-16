@@ -1,7 +1,7 @@
-7306
+7307
 41/home/superior/Documents/webCV/.gitignore1708108785202225169 0
 40/home/superior/Documents/webCV/README.md1707746743537392052 0
-46/home/superior/Documents/webCV/dist/index.html1708109434791413189 0
+46/home/superior/Documents/webCV/dist/index.html1708110535240643760 0
 57/home/superior/Documents/webCV/dist/index.72be8890.js.map1708109434823413307 0
 67/home/superior/Documents/webCV/dist/skills_ilustration.f0a6f1e5.png1708109434843413381 0
 58/home/superior/Documents/webCV/dist/index.b2625c6b.css.map1708109434823413307 0
@@ -1311,7 +1311,7 @@
 83/home/superior/Documents/webCV/node_modules/electron-to-chromium/full-versions.json1707926732347198657 0
 85/home/superior/Documents/webCV/node_modules/electron-to-chromium/chromium-versions.js1707926731675187881 0
 90/home/superior/Documents/webCV/node_modules/electron-to-chromium/full-chromium-versions.js1707926731855190768 0
-70/home/superior/Documents/webCV/node_modules/svgo/plugins/cleanupIds.js1707926733539217761 0
+92/home/superior/Documents/webCV/node_modules/electron-to-chromium/full-chromium-versions.json1707926732167195771 0
 79/home/superior/Documents/webCV/node_modules/source-map/dist/source-map.debug.js1707926732703204364 0
 85/home/superior/Documents/webCV/node_modules/svgo/plugins/addAttributesToSVGElement.js1707926733511217312 0
 90/home/superior/Documents/webCV/node_modules/svgo/plugins/removeNonInheritableGroupAttrs.js1707926733767221414 0
@@ -1329,11 +1329,6 @@
 77/home/superior/Documents/webCV/node_modules/json-schema-traverse/package.json1707926731583186404 0
 71/home/superior/Documents/webCV/node_modules/svgo/plugins/_transforms.js1707926733503217185 0
 74/home/superior/Documents/webCV/node_modules/svgo/plugins/preset-default.js1707926733699220324 0
-68/home/superior/Documents/webCV/node_modules/@eslint/eslintrc/LICENSE1707926732627203145 0
-78/home/superior/Documents/webCV/node_modules/svgo/plugins/convertShapeToPath.js1707926733607218850 0
-61/home/superior/Documents/webCV/node_modules/lightningcss/node1707926733015209365 1
-75/home/superior/Documents/webCV/node_modules/caniuse-lite/data/regions/BH.js1707926733239212954 0
-118/home/superior/Documents/webCV/node_modules/@parcel/optimizer-svgo/node_modules/svgo/plugins/convertEllipseToCircle.js1707926732459200453 0
 79/home/superior/Documents/webCV/node_modules/svgo/plugins/convertStyleToAttrs.js1707926733615218979 0
 66/home/superior/Documents/webCV/node_modules/caniuse-lite/README.md1707926734667235827 0
 120/home/superior/Documents/webCV/node_modules/@parcel/optimizer-htmlnano/node_modules/css-tree/lib/syntax/config/walker.js1707926733979224811 0
@@ -1742,6 +1737,11 @@
 84/home/superior/Documents/webCV/node_modules/@parcel/reporter-dev-server/package.json1707926733655219620 0
 62/home/superior/Documents/webCV/node_modules/ajv/lib/dot/if.jst1707926733559218082 0
 120/home/superior/Documents/webCV/node_modules/@parcel/optimizer-htmlnano/node_modules/svgo/plugins/removeElementsByAttr.js1707926733151211545 0
+61/home/superior/Documents/webCV/node_modules/lightningcss/node1707926733015209365 1
+75/home/superior/Documents/webCV/node_modules/caniuse-lite/data/regions/BH.js1707926733239212954 0
+68/home/superior/Documents/webCV/node_modules/@eslint/eslintrc/LICENSE1707926732627203145 0
+78/home/superior/Documents/webCV/node_modules/svgo/plugins/convertShapeToPath.js1707926733607218850 0
+118/home/superior/Documents/webCV/node_modules/@parcel/optimizer-svgo/node_modules/svgo/plugins/convertEllipseToCircle.js1707926732459200453 0
 75/home/superior/Documents/webCV/node_modules/caniuse-lite/data/regions/LU.js1707926734487232945 0
 76/home/superior/Documents/webCV/node_modules/eslint/lib/rules/no-loop-func.js1707926734387231344 0
 124/home/superior/Documents/webCV/node_modules/ordered-binary/.nyc_output/processinfo/5b6bd808-0399-4ee6-9395-344688761dfa.json1707926732091194553 0
@@ -2528,7 +2528,8 @@
 118/home/superior/Documents/webCV/node_modules/css-select/node_modules/entities/lib/esm/generated/decode-data-html.js.map1707926732779205582 0
 122/home/superior/Documents/webCV/node_modules/@parcel/optimizer-htmlnano/node_modules/css-tree/lib/syntax/atrule/supports.js1707926733927223978 0
 67/home/superior/Documents/webCV/node_modules/entities/lib/index.d.ts1707926732579202376 0
-87/home/superior/Documents/webCV/node_modules/caniuse-lite/data/features/vector-effect.js1707926734659235700 0
+76/home/superior/Documents/webCV/node_modules/entities/lib/decode_codepoint.js1707926731727188714 0
+69/home/superior/Documents/webCV/node_modules/domutils/lib/traversal.js1707926732067194167 0
 77/home/superior/Documents/webCV/node_modules/@swc/helpers/_/index/package.json1707926734499233137 0
 70/home/superior/Documents/webCV/node_modules/@parcel/graph/src/types.js1707926733155211608 0
 72/home/superior/Documents/webCV/node_modules/fast-deep-equal/package.json1707926731883191217 0
@@ -2817,6 +2818,7 @@
 60/home/superior/Documents/webCV/node_modules/term-size/vendor1707926731807189998 1
 75/home/superior/Documents/webCV/node_modules/caniuse-lite/data/regions/NP.js1707926734531233649 0
 99/home/superior/Documents/webCV/node_modules/@swc/helpers/esm/_class_apply_descriptor_destructure.js1707926733731220837 0
+87/home/superior/Documents/webCV/node_modules/caniuse-lite/data/features/vector-effect.js1707926734659235700 0
 96/home/superior/Documents/webCV/node_modules/caniuse-lite/data/features/keyboardevent-location.js1707926734471232689 0
 89/home/superior/Documents/webCV/node_modules/caniuse-lite/data/features/getrandomvalues.js1707926734411231728 0
 93/home/superior/Documents/webCV/node_modules/css-select/lib/esm/pseudo-selectors/subselects.js1707926732579202376 0
@@ -3188,6 +3190,7 @@
 104/home/superior/Documents/webCV/node_modules/css-select/node_modules/dom-serializer/lib/foreignNames.d.ts1707926732203196349 0
 91/home/superior/Documents/webCV/node_modules/caniuse-lite/data/features/css-focus-visible.js1707926733951224362 0
 76/home/superior/Documents/webCV/node_modules/css-select/lib/esm/sort.d.ts.map1707926733147211481 0
+64/home/superior/Documents/webCV/node_modules/json5/dist/index.mjs1707926732427199940 0
 63/home/superior/Documents/webCV/node_modules/json5/dist/index.js1707926731867190960 0
 95/home/superior/Documents/webCV/node_modules/css-select/node_modules/domutils/lib/esm/index.d.ts1707926733051209942 0
 70/home/superior/Documents/webCV/node_modules/svgo/plugins/mergePaths.js1707926733651219555 0
@@ -3350,7 +3353,7 @@
 118/home/superior/Documents/webCV/node_modules/@parcel/core/test/fixtures/config-extends-not-found/.parcelrc-node-modules1707926733143211416 0
 93/home/superior/Documents/webCV/node_modules/@parcel/runtime-js/lib/helpers/node/css-loader.js1707926732847206672 0
 94/home/superior/Documents/webCV/node_modules/@parcel/runtime-js/src/helpers/worker/js-loader.js1707926733147211481 0
-30/home/superior/Documents/webCV1707926775335879825 1
+30/home/superior/Documents/webCV1708110602136998451 1
 86/home/superior/Documents/webCV/node_modules/eslint/lib/rules/class-methods-use-this.js1707926733163211737 0
 66/home/superior/Documents/webCV/node_modules/semver/ranges/valid.js1707926732911207698 0
 91/home/superior/Documents/webCV/node_modules/css-tree/lib/syntax/node/PseudoClassSelector.js1707926734263229359 0
@@ -3363,9 +3366,7 @@
 116/home/superior/Documents/webCV/node_modules/msgpackr-extract/node_modules/node-gyp-build-optional-packages/README.md1707926731879191153 0
 72/home/superior/Documents/webCV/node_modules/inherits/inherits_browser.js1707926731627187110 0
 66/home/superior/Documents/webCV/node_modules/tslib/modules/index.js1707926731695188202 0
-86/home/superior/Documents/webCV/node_modules/caniuse-lite/data/features/documenthead.js1707926734283229679 0
-106/home/superior/Documents/webCV/node_modules/css-select/node_modules/dom-serializer/lib/esm/foreignNames.js1707926731743188971 0
-41/home/superior/Documents/webCV/index.html1708109347799107347 0
+41/home/superior/Documents/webCV/index.html1708109566127924810 0
 48/home/superior/Documents/webCV/package-lock.json1707926765611727036 0
 75/home/superior/Documents/webCV/node_modules/caniuse-lite/data/regions/SL.js1707926734631235251 0
 91/home/superior/Documents/webCV/node_modules/css-select/node_modules/entities/lib/index.d.ts1707926733327214365 0
@@ -3445,11 +3446,6 @@
 93/home/superior/Documents/webCV/node_modules/caniuse-lite/data/features/css-descendant-gtgt.js1707926733891223400 0
 81/home/superior/Documents/webCV/node_modules/caniuse-lite/data/features/svg-img.js1707926734643235443 0
 98/home/superior/Documents/webCV/node_modules/css-select/node_modules/entities/lib/esm/escape.js.map1707926733119211032 0
-58/home/superior/Documents/webCV/img/aboutMe_ilustration.png1707924871803074614 0
-76/home/superior/Documents/webCV/node_modules/@swc/helpers/cjs/_instanceof.cjs1707926733343214620 0
-89/home/superior/Documents/webCV/node_modules/caniuse-lite/data/features/css-caret-color.js1707926733803221991 0
-62/home/superior/Documents/webCV/node_modules/@eslint/js/LICENSE1707926731807189998 0
-85/home/superior/Documents/webCV/node_modules/@parcel/optimizer-swc/lib/SwcOptimizer.js1707926732747205069 0
 62/home/superior/Documents/webCV/node_modules/reusify/benchmarks1707926731923191859 1
 64/home/superior/Documents/webCV/node_modules/timsort/package.json1707926731531185570 0
 97/home/superior/Documents/webCV/node_modules/csso/node_modules/css-tree/cjs/parser/SyntaxError.cjs1707926733751221158 0
@@ -3464,6 +3460,8 @@
 69/home/superior/Documents/webCV/node_modules/balanced-match/LICENSE.md1707926731723188650 0
 70/home/superior/Documents/webCV/node_modules/@parcel/cache/src/index.js1707926732979208789 0
 74/home/superior/Documents/webCV/node_modules/@lezer/common/dist/index.d.cts1707926732371199041 0
+86/home/superior/Documents/webCV/node_modules/caniuse-lite/data/features/documenthead.js1707926734283229679 0
+106/home/superior/Documents/webCV/node_modules/css-select/node_modules/dom-serializer/lib/esm/foreignNames.js1707926731743188971 0
 89/home/superior/Documents/webCV/node_modules/csso/node_modules/css-tree/lib/lexer/Lexer.js1707926734215228590 0
 75/home/superior/Documents/webCV/node_modules/caniuse-lite/data/regions/MV.js1707926734515233394 0
 63/home/superior/Documents/webCV/node_modules/minimatch/README.md1707926731863190897 0
@@ -3554,6 +3552,11 @@
 73/home/superior/Documents/webCV/node_modules/@parcel/profiler/src/types.js1707926733527217569 0
 71/home/superior/Documents/webCV/node_modules/domelementtype/package.json1707926731935192051 0
 89/home/superior/Documents/webCV/node_modules/@swc/helpers/_/_class_private_field_loose_key1707926734267229422 1
+89/home/superior/Documents/webCV/node_modules/caniuse-lite/data/features/css-caret-color.js1707926733803221991 0
+62/home/superior/Documents/webCV/node_modules/@eslint/js/LICENSE1707926731807189998 0
+85/home/superior/Documents/webCV/node_modules/@parcel/optimizer-swc/lib/SwcOptimizer.js1707926732747205069 0
+58/home/superior/Documents/webCV/img/aboutMe_ilustration.png1707924871803074614 0
+76/home/superior/Documents/webCV/node_modules/@swc/helpers/cjs/_instanceof.cjs1707926733343214620 0
 96/home/superior/Documents/webCV/node_modules/css-select/lib/esm/pseudo-selectors/filters.d.ts.map1707926732939208147 0
 108/home/superior/Documents/webCV/node_modules/css-select/node_modules/dom-serializer/lib/foreignNames.d.ts.map1707926732075194296 0
 86/home/superior/Documents/webCV/node_modules/eslint/lib/rules/function-paren-newline.js1707926733899223529 0
@@ -3702,6 +3705,16 @@
 69/home/superior/Documents/webCV/node_modules/reusify/benchmarks/fib.js1707926731923191859 0
 80/home/superior/Documents/webCV/node_modules/css-select/node_modules/domutils/lib1707926733139211352 1
 96/home/superior/Documents/webCV/node_modules/css-select/node_modules/domutils/lib/legacy.d.ts.map1707926732683204043 0
+40/home/superior/Documents/webCV/nohup.out1708110604129009038 0
+95/home/superior/Documents/webCV/node_modules/caniuse-lite/data/features/extended-system-fonts.js1707926734343230639 0
+105/home/superior/Documents/webCV/node_modules/@parcel/graph/test/integration/adjacency-list-shared-array.js1707926732575202311 0
+60/home/superior/Documents/webCV/node_modules/wrappy/wrappy.js1707926731691188137 0
+92/home/superior/Documents/webCV/node_modules/css-select/node_modules/dom-serializer/README.md1707926732143195387 0
+71/home/superior/Documents/webCV/node_modules/to-regex-range/package.json1707926731531185570 0
+67/home/superior/Documents/webCV/node_modules/@parcel/core/src/public1707926734255229230 1
+90/home/superior/Documents/webCV/node_modules/@swc/helpers/cjs/_async_generator_delegate.cjs1707926732915207763 0
+79/home/superior/Documents/webCV/node_modules/eslint/lib/rules/no-implied-eval.js1707926734371231088 0
+126/home/superior/Documents/webCV/node_modules/@parcel/optimizer-htmlnano/node_modules/css-select/lib/pseudo-selectors/aliases.js1707926731747189035 0
 93/home/superior/Documents/webCV/node_modules/css-select/node_modules/domutils/lib/stringify.js1707926732311198080 0
 91/home/superior/Documents/webCV/node_modules/@swc/helpers/cjs/_object_without_properties.cjs1707926733483216864 0
 86/home/superior/Documents/webCV/node_modules/css-select/node_modules/domutils/readme.md1707926732979208789 0
@@ -3843,7 +3856,6 @@
 62/home/superior/Documents/webCV/node_modules/@parcel/utils/test1707926734311230128 1
 57/home/superior/Documents/webCV/node_modules/msgpackr/dist1707926733827222375 1
 63/home/superior/Documents/webCV/node_modules/@swc/core/README.md1707926733167211801 0
-64/home/superior/Documents/webCV/node_modules/json5/dist/index.mjs1707926732427199940 0
 87/home/superior/Documents/webCV/node_modules/caniuse-lite/data/features/mediarecorder.js1707926734499233137 0
 95/home/superior/Documents/webCV/node_modules/caniuse-lite/data/features/background-attachment.js1707926733111210903 0
 95/home/superior/Documents/webCV/node_modules/@swc/helpers/_/_class_static_private_field_spec_get1707926734315230191 1
@@ -4587,15 +4599,6 @@
 54/home/superior/Documents/webCV/node_modules/css-select1707926733231212827 1
 114/home/superior/Documents/webCV/node_modules/@parcel/optimizer-htmlnano/node_modules/mdn-data/css/types.schema.json1707926732903207571 0
 77/home/superior/Documents/webCV/node_modules/@swc/core-linux-x64-gnu/README.md1707926732731204812 0
-95/home/superior/Documents/webCV/node_modules/caniuse-lite/data/features/extended-system-fonts.js1707926734343230639 0
-105/home/superior/Documents/webCV/node_modules/@parcel/graph/test/integration/adjacency-list-shared-array.js1707926732575202311 0
-60/home/superior/Documents/webCV/node_modules/wrappy/wrappy.js1707926731691188137 0
-92/home/superior/Documents/webCV/node_modules/css-select/node_modules/dom-serializer/README.md1707926732143195387 0
-71/home/superior/Documents/webCV/node_modules/to-regex-range/package.json1707926731531185570 0
-67/home/superior/Documents/webCV/node_modules/@parcel/core/src/public1707926734255229230 1
-90/home/superior/Documents/webCV/node_modules/@swc/helpers/cjs/_async_generator_delegate.cjs1707926732915207763 0
-79/home/superior/Documents/webCV/node_modules/eslint/lib/rules/no-implied-eval.js1707926734371231088 0
-126/home/superior/Documents/webCV/node_modules/@parcel/optimizer-htmlnano/node_modules/css-select/lib/pseudo-selectors/aliases.js1707926731747189035 0
 97/home/superior/Documents/webCV/node_modules/@swc/helpers/cjs/_object_without_properties_loose.cjs1707926733467216607 0
 81/home/superior/Documents/webCV/node_modules/@swc/helpers/cjs/_to_property_key.cjs1707926733555218017 0
 78/home/superior/Documents/webCV/node_modules/caniuse-lite/data/features/apng.js1707926732823206288 0
@@ -4746,8 +4749,7 @@
 72/home/superior/Documents/webCV/node_modules/entities/lib/decode.d.ts.map1707926732363198914 0
 101/home/superior/Documents/webCV/node_modules/css-select/node_modules/domhandler/lib/esm/index.d.ts.map1707926732091194553 0
 86/home/superior/Documents/webCV/node_modules/@parcel/node-resolver-core/lib/builtins.js1707926733371215069 0
-76/home/superior/Documents/webCV/node_modules/entities/lib/decode_codepoint.js1707926731727188714 0
-69/home/superior/Documents/webCV/node_modules/domutils/lib/traversal.js1707926732067194167 0
+70/home/superior/Documents/webCV/node_modules/svgo/plugins/cleanupIds.js1707926733539217761 0
 76/home/superior/Documents/webCV/node_modules/svgo/plugins/sortDefsChildren.js1707926733843222632 0
 74/home/superior/Documents/webCV/node_modules/eslint-scope/lib/referencer.js1707926732099194680 0
 78/home/superior/Documents/webCV/node_modules/svgo/plugins/removeRasterImages.js1707926733771221478 0
@@ -7175,7 +7177,7 @@
 111/home/superior/Documents/webCV/node_modules/@parcel/optimizer-htmlnano/node_modules/css-select/lib/general.d.ts1707926732723204684 0
 77/home/superior/Documents/webCV/node_modules/@parcel/utils/src/alternatives.js1707926733771221478 0
 83/home/superior/Documents/webCV/node_modules/@parcel/utils/src/relativeBundlePath.js1707926734283229679 0
-35/home/superior/Documents/webCV/dist1708109434847413395 1
+35/home/superior/Documents/webCV/dist1708110535244643782 1
 76/home/superior/Documents/webCV/node_modules/@parcel/utils/src/http-server.js1707926733907223657 0
 75/home/superior/Documents/webCV/node_modules/caniuse-lite/data/regions/AO.js1707926732783205646 0
 79/home/superior/Documents/webCV/node_modules/@swc/helpers/esm/_inherits_loose.js1707926733899223529 0
@@ -7304,4 +7306,3 @@
 70/home/superior/Documents/webCV/node_modules/tslib/modules/package.json1707926731947192243 0
 63/home/superior/Documents/webCV/node_modules/tslib/tslib.es6.mjs1707926732103194745 0
 58/home/superior/Documents/webCV/node_modules/tslib/tslib.js1707926731895191409 0
-92/home/superior/Documents/webCV/node_modules/electron-to-chromium/full-chromium-versions.json1707926732167195771 0
