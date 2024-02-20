@@ -1,7 +1,4 @@
 /*
-  Last-Modified: /.netlify/functions/get-current-date
-
-/*
   Cache-Control: public, max-age=31536000, immutable
 
 /*.html

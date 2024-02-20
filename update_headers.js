@@ -14,6 +14,15 @@ fs.readdirSync(distDir).forEach(file => {
     headersContent += `/${file}\n  Last-Modified: ${lastModified}\n\n`;
 });
 
+headersContent += `
+/*
+Cache-Control: public, max-age=31536000, immutable
+
+/*.html
+Cache-Control: public, max-age=3600
+
+`;
+
 // Escribe el contenido actualizado en el archivo _headers
 fs.writeFileSync(headersFile, headersContent);
 
