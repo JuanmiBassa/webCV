@@ -1,5 +1,7 @@
 /*
   Content-Encoding: gzip
+  Last-Modified: {CURRENT_DATE}
+  ETag: "{ETAG_HASH}"
 
 /*.html
   Cache-Control: public, max-age=3600
