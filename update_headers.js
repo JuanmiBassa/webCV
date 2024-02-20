@@ -6,7 +6,6 @@ const headersFile = path.join(distDir, '_headers');
 
 let headersContent = '';
 
-// Recorre todos los archivos en el directorio 'dist'
 fs.readdirSync(distDir).forEach(file => {
     const filePath = path.join(distDir, file);
     const stats = fs.statSync(filePath);
@@ -23,7 +22,4 @@ Cache-Control: public, max-age=3600
 
 `;
 
-// Escribe el contenido actualizado en el archivo _headers
 fs.writeFileSync(headersFile, headersContent);
-
-console.log('Headers actualizados correctamente.');
