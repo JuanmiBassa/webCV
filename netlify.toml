@@ -1,4 +1,0 @@
-[[redirects]]
-  from = "/current-date"
-  to = "/.netlify/functions/get-current-date"
-  status = 200
