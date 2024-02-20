@@ -1,5 +1,5 @@
 /*
-  Last-Modified: {CURRENT_DATE}
+  Last-Modified: /.netlify/functions/get-current-date
 
 /*.html
   Cache-Control: public, max-age=3600
