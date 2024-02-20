@@ -1,9 +1,6 @@
 /*
   Content-Encoding: gzip
-  Last-Modified: {CURRENT_DATE}
-
-/*.html
-  Cache-Control: public, max-age=3600
 
 /*
-  Cache-Control: public, max-age=31536000, immutable
+  Cache-Control: public, max-age=3600
+
