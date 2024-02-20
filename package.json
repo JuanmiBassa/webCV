@@ -4,14 +4,16 @@
   "description": "",
   "scripts": {
     "start": "parcel ./index.html",
-    "build": "parcel build ./index.html",
+    "build": "parcel build ./index.html && cp ./_headers ./dist/_headers",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "cssnano": "^6.0.3",
     "eslint": "^8.50.0",
     "parcel": "^2.10.2",
+    "postcss": "^8.4.35",
     "prettier": "^3.0.3"
   }
 }
